@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e8f5e9; /* Light green background */
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 250px;
+    height: 100%;
+    background-color: #2e7d32; /* Green color */
+    position: fixed;
+    right: -250px; /* Move the sidebar to the right */
+    top: 0;
+    transition: right 0.3s;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid #4caf50;
+}
+
+.navbar a:hover {
+    background-color: #4caf50;
+}
+
+/* Three dots button to toggle navbar */
+.navbar-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Positioned to the right */
+    font-size: 24px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 20;
+}
+
+/* About Section */
+#about {
+    padding: 20px;
+}
+
+#about h1 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 2.5rem;
+}
+
+#about p {
+    text-align: center;
+    color: #616161;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Shop Info */
+.shop-info {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.shop-info img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Limit image width */
+    border-radius: 8px;
+}
+
+.shop-description {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shop-description h2 {
+    color: #2e7d32;
+    font-size: 1.5rem;
+}
+
+.shop-description p {
+    color: #616161;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .shop-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-description {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
